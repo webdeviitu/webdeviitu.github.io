@@ -1,0 +1,19 @@
+body {
+	background-image: url(../img/background.jpg);
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+header {
+	background-color: white;
+	background-repeat: no-repeat;
+}
+
+main {
+	background-color: white;
+	margin: 2% 15%;
+}
+
+h3 {
+	margin-top: 15px;
+}
