@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Task 4</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width:device-width">
+	<link rel="stylesheet" type="text/css" href="../css/tasks_style.css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<table class="navtabm">
+				<tr>
+					<td class="navtab"><h2><a href="task3.html" class="navanchor">Task 3</a></h2></td><td class="navtab"><h1>Task 4</h1></td><td class="navtab"><h2><a href="task5.html" class="navanchor">Task 5</a></h2></td>
+				</tr>
+			</table>
+		</nav>
+	</header>
+
+	<main class="container3">
+		<div class="form_sending2">
+			<form action="#">
+				<fieldset>
+					<legend><h2><strong>Form Sending</strong></h2></legend>
+					<label for="inpname">Name<b>*</b></label>
+					<input type="text" name="name" id="inpname" pattern="[A-Za-z]{2,32}(\s[A-Za-z]{1,32})?" title="Form shouldn't contain non latin characters or/and numbers or/and symbols or/and be shorter than 2 characters" placeholder="John Smith (surname if necessary)" required="required">
+					<br>
+					<label for="inpphonenum">Phone number<b>*</b></label>
+					<input type="tel" name="phone" id="inpphonenum" pattern="[8]\s[7][0-9]{2}\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" maxlength="15" title="Fill form in this format  8 7XX XXX XX XX where X is your number" placeholder="8 7XX XXX XX XX" required="required">
+					<br>
+					<label for="inpemail">E-mail<b>*</b></label>
+					<input type="text" name="email" id="inpemail" placeholder="example@mailbox.com" required="required">
+					<br>
+
+					<fieldset>
+						<legend><h3><strong>What subject do you like?</strong></h3></legend>
+						<input type="radio" name="subject" id="sc1" value="kazakhlang"><label for="sc1">Kazakh Language</label><br>
+						<input type="radio" name="subject" id="sc2" value="iwd"><label for="sc2">Introduction to Web Development</label><br>
+						<input type="radio" name="subject" id="sc3" value="physicaled"><label for="sc3">Physical Education</label><br>
+					</fieldset>
+
+					<fieldset>
+						<legend><h3><strong>What programming language do you like?</strong></h3></legend>
+						<input type="checkbox" name="subject" id="plc1" value="kazakhlang"><label for="plc1">C++</label><br>
+						<input type="checkbox" name="subject" id="plc2" value="iwd"><label for="plc2">HTML&amp;CSS&amp;JS</label><br>
+						<input type="checkbox" name="subject" id="plc3" value="physicaled"><label for="plc3">Java</label><br>
+					</fieldset>
+					<br>
+					<label for="regdate">Registration date</label>
+					<input type="datetime-local" name="regdate" id="regdate" value="2021-09-21T00:00" max="2021-09-28T23:59" min="2021-09-21T00:00" required="required">
+					<br><br>
+					<label for="region">Place</label>
+					<select name="region" id ="region">
+						<option value="selectone" disabled="disabled" selected="selected">Select one</value>
+						<option value="kz">Kazakhstan</option>
+						<option value="ru">Russian Federation</option>
+						<option value="kg">Kyrgyzstan</option>
+					</select>
+					<br>
+					<label for="aboutteacher">About teacher</label>
+					<textarea name="aboutteacher" id="aboutteacher" placeholder="Enter iformation about teacher right here..."></textarea>
+					<br>
+					<input type="submit" name="submit" value="Sumbit Answers" id="submit">
+				</fieldset>
+			</form>
+		</div>
+	</main>
+
+	<footer>
+		<nav class="navlow">
+			<h1><a href="../index.html" class="navanchor">Navigation</a></h1>
+		</nav>
+	</footer>
+</body>
+</html>
