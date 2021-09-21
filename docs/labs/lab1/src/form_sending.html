@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Send a Job Invitation</title>
+		<meta name="viewport" content="width=device-width">
+		
+		<link rel="stylesheet" href="css/style.css">
+		
+		<meta charset="UTF-8">
+		
+		<meta name="Author" content="Zhandos Yessengaziev">
+		<meta name="Copyright" content="IITU (WEB_LAB_1)">
+	</head>
+	
+	<body>
+		<header>
+			<div class="header_item">
+				<button class="button_left"><b><img src="img/my_photo.png" width=20 height=20 style="vertical-align: bottom"><a href="index.html">Show CV!</a></b></button>
+			</div>
+		
+			<div class="header_item">
+				<h1>Send a Job Invitation</h1>
+			</div>
+		
+			<div class="header_item">
+				<button class="button_right"><b><img src="img/certificate_button.png" width=20 height=20 style="vertical-align: bottom"><a href="certificates.html">Show certificates!</a></b></button>
+			</div>
+		</header>
+		
+		<div class="all_content">
+			<!--Add a new form with action (that has no value (it's just plug)), class attributes-->
+			<form action="#" class="form_sending">
+				<h2><i>About the Company</i></h2>
+				
+				<!--Create a new div block that has form item (fitem) class-->
+				<div class="fitem">
+					<!--Create label for first text-input (they're linked by id (cn))-->
+					<label for="cn"><b>Name of the Company:</b></label>
+					<!--Create a new input wuth type (type of the input, in this case it's text), name (name of the input) and id(identification name of the input, in this case it's cn)-->
+					<input type="text" name="company_name" id="cn"></input>
+				</div>
+				
+				<div class="fitem">
+					<label for "ac"><b>E-mail of the Company:</b></label>
+					<input type="text" name="about_company" id="ac">
+				</div>
+				
+				
+				<h2><i>About position</i></h2>
+				
+				<div class="fitem">
+					<h3>Work schedule:</h3>
+					<!--Create new inputs with "radio" type, ids, and "work_schedule" name (name is very important, cause radio must have only one choice, and elements (inputs) must have one same name)-->
+					<input type="radio" id="ft" name="work_schedule">Full-time
+					<input type="radio" id="ss" name="work_schedule">Shift schedule
+					<input type="radio" id="rw" name="work_schedule">Remote work
+				</div>
+				
+				<div class="fitem">
+					<label for="pn">Position:</label>
+					<input type="text" id="pn">
+				</div>
+				
+				<div class="fitem">
+					<label for="ps">Salary:</label>
+					<input type="text" id="ps">
+				</div>
+				
+				
+				<h2><i>Cover letter</i></h2>
+				
+				<div class="fitem">
+					<!--Create a new textarea with own name and rows and columns number-->
+					<h3>Write a short cover letter:</h3>
+					<textarea name="cover_letter" cols="40" rows="3"></textarea><br>
+				</div>
+				
+				<div class="fitem">
+					<!--Create new buttons by with submit and reset types:
+					Submit type is for sending content of the form, and by default has template with Submit sign
+					Reset type is for clear all inputs and textareas of the form-->
+					<input type="submit" value="Submit">
+					<input type="reset" value="Reset">
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
