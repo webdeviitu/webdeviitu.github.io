@@ -1,0 +1,120 @@
+<!--Set version of HTML (by default it's verson 5 (as just "html"))-->
+<!DOCTYPE html>
+
+<!--Write <html> tag, that'll conatin all our code, and also add "lang" attribute to choose language of the webpage-->
+<html lang="en">
+	<!--Write <head> tag to add meta-data and title, that won't be shown to users of the website--> 
+	<head>
+		<!--"viewport" meta-tag handle for showing of the website, and in content we set "width" parameter as "device-width", so it'll be correctly outputted to users with different devices-->
+		<meta name="viewport" content="width=device-width">
+		
+		<!--Write title of the webpage (that will be outputted at the browser)-->
+		<title>My Curriculum Vitae</title>
+		<!--Set encoding type (as usual UTF-8)-->
+		<meta charset="UTF-8">
+		
+		<!--Link index.html with stylesheet named style.css by link tag, rel attribute (relationship) and href (hyperreference) atrribute-->
+		<link rel="stylesheet" href="css/style.css">
+		
+		<!--Metadata that contains name (name of the meta data) and content (it's value) atrributes (just for fun)-->
+		<meta name="Author" content="Zhandos Yessengaziev">
+		<meta name="Copyright" content="IITU (WEB_LAB_1)">
+	</head>
+	
+	
+	<!--Write <body> tag to inculde into it all visiable content of the webpage-->
+	<body>
+		<!--Write header tag, that will contain name of this page-->
+		<header>
+			<!--Create a new three block with <div> tag and give atribute class with value "header_item"-->
+			<div class="header_item">
+				<!--Create three elements: 1)Left button, middle title, rigth button-->
+				
+				<!--Write <button> tag and give atribute class with name "button left", into this button add image 
+				with width and height atributes with their own values, after image add hyperlink text wit <a> tag to go to certificates' page-->
+				<button class="button_left"><b><img src="img/certificate_button.png" width=20 height=20 style="vertical-align: bottom"><a href="certificates.html">Show certificates!</a></b></button>
+			</div>
+		
+			<div class="header_item">
+				<!--This block contains name of the page-->
+				<h1>Curriculum Vitae</h1>
+			</div>
+		
+			<div class="header_item">
+				<!--Create another one new button with same atrributes and content as first (left) button-->
+				<button class="button_right"><b><img src="img/form_button.png" width=20 height=20 style="vertical-align: bottom"><a href="form_sending.html">Send a job invitaton!</a></b></button>
+			</div>
+		</header>
+	
+		<div class="all_content">
+			<!--It's main block of the page: it contains all infromation of CV-->
+			
+			<!--General information about me-->
+			<h2><i>General information</i></h3>
+			
+			<p><b>Full name: </b>Yessengaziev Zhandos Miyatbekovich</p>
+			<p><b>Date of birth: </b> 10 July 2002</P>
+			<!--Add image with <img> tag with src (source image (that placed in the img folder)), width, height (of the image), alt (alternative text if the image won't outputted) and class names-->
+			<img src="img/my_photo.png" width="150" height="150" class="myphoto" alt="Here could have been image, but smthng went wrong :(">
+			<p><b>Sex: </b>Male</p>
+			<p><b>Contact information: </b>
+			
+			<!--Add unsorted list with <ul> tag, that contains 2 lists (<li> tags)-->
+			<ul>
+				<li>Phone number: <i>+7 708 823 81 62</i></li>
+				<li>E-mail: <i>zesengaziev@outlook.com</i></li>
+			</ul>
+
+			</p>
+			<p><b>Reside in: </b>Kazakhstan, Almaty</p>
+			<p><b>Citizenship: </b>Kazakhstan</p>
+			<!--Here's paragraoh <p> that contains a lot of different text-markup tags, such as:
+			1) <b> bold text;
+			2) <del> delted text;
+			3) <ins> inserted text(for describe additional changes)
+			4) <i> italic text; -->
+			<p><b>Relocate/Business trips: </b><del>Not</del> (<ins>this word was changed to "deleted"</ins>) ready to relocate, ready for rare business trips</p>
+		
+			<h2><i>Professional skills</i></h2>
+			
+			<p><b>Known programming languages: </b> basics of <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwii6Pnk1vLyAhXwlYsKHRmABi4QFnoECAgQAQ&url=https%3A%2F%2Fru.wikipedia.org%2Fwiki%2FC%252B%252B&usg=AOvVaw1MGYh4kjftQImdtmjvOPuf">C++</a>, <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiWzdj61vLyAhWqxIsKHcEHC6AQFnoECAMQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPython_(programming_language)&usg=AOvVaw2BukyCCe-5crhZoVjPWlrr"> Python</a></p>
+			<img src="img/prof_skills.png" width="150" height="150" class="prof_skills" alt="Here could have been image, but smthng went wrong :(">
+			<p><b>Languages: </b>
+			
+			<!--Create ordered list <ol>-->
+			<ol>
+				<li>English: <em>Intermediate<sup>(B1)</sup></em></li>
+				<li>Russian: <em>Upper-Intermediate<sup>(B2)</sup></em></li>
+				<li>Kazakh: <em>Native</em></li>
+			</ol>
+			</p>
+			
+			<!--Write <mark> tag to mark some text ("basic of ...") and abrriviature <abbr> tag tha contains <title> atribute-->
+			<p><b>Other skills: </b><mark>basics of <abbr title="Telegram Bot Apllication Programming Interface">TeleBot API</abbr><sub>(Python)</sub></mark></p>
+		
+			<h2><i>Desired position and salary</i></h2>
+			<p><b>Position: </b>After the interview</p>
+			<img src="img/pns.png" width="150" height="150" class="pns" alt="Here could have been image, but smthng went wrong :(">
+			<p><b>Salary: </b>After the interview</p>
+			<p><b>Ability to work in (spheres):</b>
+				
+			<ul>
+				<li><abbr title="Information Technologies">IT</abbr></li>
+				<li>Internet</li>
+				<li>Technologies</li>
+			</ul>
+			</p>
+			
+			<p><b>Employment: </b>Full time</p>
+			<p><b>Work schedule: </b>Full day</p>
+			<p><b>Travel time to work: </b>Any</p>
+			
+			<!--Add image and paragraph that have onw class-->
+			<h2><i>Education</i></h2>
+			<img src="img/edctn.png" width="164.3" height="69.5" class="logo" alt="Here could have been image, but smthng went wrong :(">
+			<p class="edctn_"><b>Bachelor (2025): </b><i><abbr title="International Information Technologies University">IITU</abbr> (Almaty), Faculty of Digital Transformations, Information Systems speciality</i></p>
+		</div>
+	</body>
+	
+	
+</html>
