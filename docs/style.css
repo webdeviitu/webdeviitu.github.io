@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: slategray;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+    background-color: rgb(90, 104, 119);
+    color: rgb(134, 151, 170);
+    border-bottom: 2px solid black;
+}
+
+header div#null {
+    background-color: rgb(75, 87, 102);
+    padding: 5px;
+}
+
+main {
+    width: 95%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    background-color: rgb(157, 173, 190);
+    padding: 15px 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+main a {
+    text-decoration: none;
+    color: rgb(89, 105, 122);
+    font-size: 150%;
+}
+
+footer {
+    background-color: rgb(75, 87, 102);
+    width: 100%;
+    text-align: center;
+    font-size: 150%;
+}
