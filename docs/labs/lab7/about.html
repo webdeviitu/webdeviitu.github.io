@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png">
+    <title>More Or Less</title>
+</head>
+<body>
+    <header>
+        <img src="img/icon.png" width="150px" height="150px">
+        <h1 id="pagename">About</h1>
+        <h1 id="sitename"><i>Mini<br>Games<br>For<br>Everybody</i></h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" id="active">Home Page with Game</a></li>
+                <li id="active"><a href="about.html">About Game</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <h2>Source code of <strong>script.js</strong></h2>
+
+            <code>
+                <pre>
+function createNewNum() {
+let computersNumber = Math.floor(Math.random() * 1000) + 1;
+computersNumber = String(computersNumber);
+return computersNumber;
+}
+
+let correctNum = createNewNum();
+document.getElementById('correctnum').innerHTML = correctNum;
+let attempts = [];
+
+function userGuess(value) {
+    if (value==correctNum) {
+        alert('You are THE BEST! The expected number was found.');
+        document.forms.checknumber.reset();
+        attempts.push(value);
+    }
+
+    else if (value>correctNum) {
+        alert('Expected number is less than inputted number! Try again.');
+        attempts.push(value);
+        document.getElementById('attempts').innerHTML = attempts;
+    }
+
+    else if (value"<"correctNum) {
+        alert('Expected number is more than inputted number! Try again.');
+        attempts.push(value);
+        document.getElementById('attempts').innerHTML = attempts;
+    }
+}
+                </pre>
+            </code>
+
+            <h2>About author</h2>
+            <p style="width: 75%;margin-left: auto; margin-right: auto;">Меня зовут Медетбек Нурбол.  Я родился в Жезказгане, окончил 13-ю общеобразовательную школу, поступил в Казахский государственный юридический университет по специальности «юриспруденция», сейчас учусь на первом курсе.</p>
+            <p style="width: 75%;margin-left: auto; margin-right: auto; padding: 15px;">Мои хобби - чтение книг, просмотр исторических и автобиографических фильмов.  Мне нравится тусоваться с моими друзьями</p>
+        </div>
+    </main>
+
+    <footer>
+        <img src="img/icon.png" width="50px" height="50px" style="margin: 0; padding: 0px;">
+        <small>More Or Less 2021. All rights reserved.</small>
+    </footer>
+</body>
+</html>

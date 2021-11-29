@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png">
+    <title>More Or Less</title>
+</head>
+<body>
+    <header>
+        <img src="img/icon.png" width="150px" height="150px">
+        <h1 id="pagename">Menu</h1>
+        <h1 id="sitename"><i>Mini<br>Games<br>For<br>Everybody</i></h1>
+
+        <nav>
+            <ul>
+                <li id="active"><a href="index.html" id="active">Home Page with Game</a></li>
+                <li><a href="about.html">About Game</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <h1 class="gamename">Guess My Number</h1>
+            <hr>
+            <p>The computer guessed a number in the range from 1 to 1000. Try to find this number by typing numbers in this field:</p>
+            <form action="#" name="checknumber">
+                <input type="text" id="user-guess" placeholder="Enter number" onchange='userGuess(this.value)'>
+            </form>
+
+            <h3>Attempts:</h3>
+            <p id="attempts"></p>
+
+            <details>
+                <summary>I give up, show me the expected number!</summary>
+                <h2 id="correctnum"></h2>
+            </details>
+
+            <a href="index.html" id="newgame">Start a new game!</a><br><br>
+            <small style="font-size: 75%;">If you found correct number, but the page wasn't refreshed, click this button.</small>
+        </div>
+    </main>
+
+    <footer>
+        <img src="img/icon.png" width="50px" height="50px" style="margin: 0; padding: 0px;">
+        <small>More Or Less&copy;(2021). All rights reserved.</small>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

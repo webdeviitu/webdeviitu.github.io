@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png">
+    <title>More Or Less</title>
+</head>
+<body>
+    <header>
+        <img src="img/icon.png" width="150px" height="150px">
+        <h1 id="pagename">Menu</h1>
+        <h1 id="sitename"><i>Mini<br>Games<br>For<br>Everybody</i></h1>
+
+        <nav>
+            <ul>
+                <li id="active"><a href="index.html" id="active">Home Page with Game</a></li>
+                <li><a href="about.html">About Game</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <div class="gamearea">
+                <div id="timcounter">
+                    <h2 style="text-align: center;">Best Time for Relax</h2>
+                          <div id="inputs">
+                            <h4>Enter data</h4>
+    
+                                <input type="text" id="username" required placeholder="Your name" onchange="input_name_validation(this.value)">
+                                <p id="checkinput"></p>
+                                <input type="text" id="aspleetime" required placeholder="Asleep time" onchange="input_validation(this.value)">
+                                <p id="checkinput"></p>
+                                <input type="text" id="studytime" required placeholder="Study time" onchange="input_validation(this.value)">
+                                <p id="checkinput"></p>
+                                <input type="text" id="lecturepreptime" required placeholder="Preporation time" onchange="input_validation(this.value)">
+                                <p id="checkinput"></p>
+                                <input type="text" id="socialnetworkstime" required placeholder="Social networks time" onchange="input_validation(this.value)">
+                                <p id="checkinput"></p>
+    
+                                <button id="submitdata" style="width: 20%; font-size: 150%;" onclick="calculate()">Send data</button>
+    
+                          </div>
+                          <div id="res">
+                            <h4>Результат</h4>
+                            <p id="jsinfo"></p>
+                          </div>
+                  </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <img src="img/icon.png" width="50px" height="50px" style="margin: 0; padding: 0px;">
+        <small>MiniGames&copy;(2021). All rights reserved.</small>
+    </footer>
+
+    <script src="js/script_xo.js"></script>
+</body>
+</html>

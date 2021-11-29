@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png">
+    <title>More Or Less</title>
+</head>
+<body>
+    <header>
+        <img src="img/icon.png" width="150px" height="150px">
+        <h1 id="pagename">Menu</h1>
+        <h1 id="sitename"><i>Mini<br>Games<br>For<br>Everybody</i></h1>
+
+        <nav>
+            <ul>
+                <li id="active"><a href="index.html" id="active">Home Page with Game</a></li>
+                <li><a href="about.html">About Game</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <h1 class="gamename">Rock Paper Scissors</h1>
+            <hr>
+            <img src="img/rps/waitin.gif" style="width: 50%; box-shadow: 2px 2px 7px black;">
+
+            <table style="width: 100%;">
+                <thead>
+                    <tr>
+                        <td colspan="3"><h2>Your choice</h2></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="width: 33%;">
+                            <button onclick="check(1)" class="choice_rps">
+                                Rock
+                            </button>
+                        </td>
+                        <td style="width: 33%;">
+                            <button onclick="check(2)" class="choice_rps">
+                                Paper
+                            </button>
+                        </td>
+                        <td style="width: 33%;">
+                            <button onclick="check(3)" class="choice_rps"> 
+                                Scissors
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3 style="display: inline-table;">Your choice: <span id="playerchoice" style="color: chocolate;"></span></h3>
+                        </td>
+                        <td>
+                            <h3>VS</h3>
+                        </td>
+                        <td>
+                            <h3 style="display: inline-table;">Computer choice: <span id="compchoice" style="color: rgb(36, 210, 30);"></span></h3>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span id="playergif"></span>
+                        </td>
+                        <td>
+                            <h3 id="result" style="font-size: 200%;"></h3>
+                        </td>
+                        <td>
+                            <span id="compgif"></span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button onclick="end()" class="choice_rps"> 
+                Finish game
+            </button>
+           
+        </div>
+    </main>
+    
+    <footer>
+        <img src="img/icon.png" width="50px" height="50px" style="margin: 0; padding: 0px;">
+        <small>MiniGames&copy;(2021). All rights reserved.</small>
+    </footer>
+
+    <script src="js/script_rps.js"></script>
+</body>
+</html>
