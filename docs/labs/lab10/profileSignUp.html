@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="width" content="width:device-width">
+	<title>PROFILE | COOKHOUSE</title>
+	<link rel="shortcut icon" href="img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<table class="headermain">
+			<tr>
+				<td><img src="img/logo.png" id="logo"></td>
+				<td><h1 class="pagename">Profile</h1></td>
+				<td><h3 id="right">Make<br>Your<br>Day<br>Delicious!</h3></td>
+			</tr>
+		</table>
+		<nav>
+			<ul class="navigation">
+				<a href="index.html"><li>Home</li></a>
+				<a href="reciepes.html"><li>Resipes</li></a>
+				<a href="advices.html"><li>Advices</li></a>
+				<a href="profile.html" id="current"><li>Profile</li></a>
+				<a href="useful.html"><li>Useful links</li></a>
+				<a href="about.html"><li>About Us</li></a>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<div class="container" style="width: 30%; margin: 100px auto;">
+				<h2 style="border-bottom: 3px solid rgb(3, 114, 3); padding-bottom: 20px; font-size: 170%;">Sign Up Page</h2>
+
+            <form id="signUpForm" action="">
+				<div id="forDev"></div>
+	
+				<div class="formField">
+					<input type="text" required placeholder="Enter name" id="user_name" onchange="signUpVaildation()">
+					<p id="validationInfoNameUp"></p>
+				</div>
+				<div class="formField">
+					<input type="text" required placeholder="Enter surname" id="user_surname" onchange="signUpVaildation()">
+					<p id="validationInfoNameUp"></p>
+				</div>
+				<div class="formField">
+					<input type="email" required placeholder="Enter email" id="user_email" onchange="signUpVaildation()">
+					<p id="validationInfoEmailUp"></p>
+				</div>
+				<div class="formField">
+					<input type="password" required placeholder="Enter password" id="user_password" onchange="signUpVaildation()">
+					<p id="validationInfoPasswordUp"></p>
+				</div>
+				<div class="formField">
+					<input type="password" required placeholder="Repeat password" id="password_repeat" onchange="signUpVaildation()">
+					<p id="validationInfoPasswordRepeat"></p>
+				</div>
+				<button id="signUp" disabled>Sign Up</button>
+			</form>
+
+			<small>Already have an account?<a href="profile.html" id = "signup"> Sign in</a></small>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div id="TDK">
+			<h3 style="margin-bottom: 2px;">Almaty (Alma-Ata)</h3>
+			<p style="margin-top: 1px;">Ulitsa Manasa, d. 33<br><br><a href="mailto:zesengaziev@outlook.com" target="_blank">Contact With Us</a></p>
+		</div>
+
+		<img src="img/logo.png" id="footerLogo">
+
+		<div id="ALA">
+			<h3 style="margin-bottom: 2px;">Taldykorgan</h3>
+			<p style="margin-top: 1px;">Ulitsa Nazarbayeva, d. 133<br><br><a href="mailto:zesengaziev@outlook.com" target="_blank">Contact With Us</a></p>
+		</div>
+		<br>
+		<small>COOKHOUSE© 2021, All Rights Reserved<br>(Yessengaziev Zhandos)</small>
+	</footer>
+
+    <script src="scripts/scriptUp.js"></script>
+</body>
+</html>

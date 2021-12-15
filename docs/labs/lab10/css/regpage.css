@@ -1,0 +1,57 @@
+fieldset {
+	margin-top: 35px;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 7px double #558B5E;
+}
+
+fieldset legend {
+	font-size: 120%;
+	text-transform: uppercase;
+}
+
+table.forms {
+	margin-right: auto;
+	margin-left: auto;
+	width: 50%;
+	font-size: 150%;
+}
+
+table.forms td.label {
+	text-align: left;
+	padding: 15px 0px 15px 0px;
+}
+
+table.forms td.input {
+	text-align: right;
+	padding: 15px 0px 15px 0px;
+}
+
+table.forms td#submitb, td#resetb {
+	text-align: center;
+	padding: 15px;
+}
+
+input[type=text], [type=email] {
+	width: 100%;
+}
+
+input[type=text]:hover, [type=email]:hover {
+	border: 3px solid #45a049;
+}
+
+input[type=submit], [type=reset] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover, [type=reset]:hover {
+  background-color: #45a049;
+}

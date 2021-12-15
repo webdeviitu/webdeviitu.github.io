@@ -1,0 +1,36 @@
+main div.reciepe {
+	width: 75%;
+	margin: 15px auto 15px auto;
+	border: 7px double #558B5E;
+	text-align: left;
+	background-color: #E7CFB1;
+}
+
+main div.reciepe p {
+	margin-left: 15px;
+}
+
+main div.reciepe h4.recname {
+	text-transform: capitalize;
+	text-align: center;
+	font-size: 110%;
+	margin-bottom: 0;
+}
+
+main div.reciepe img.recimg {
+	float: right;
+	width: 150px;
+	height: 150px;
+	margin-bottom: 30px;
+}
+
+main a.rcpanchor {
+	text-decoration: none;
+	color: #46A85F;
+}
+
+main a.rcpanchor:hover {
+	text-decoration: none;
+	color: #4FC86E;
+	transition: 0.5s;
+}

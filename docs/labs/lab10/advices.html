@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="width" content="width:device-width">
+	<title>ADVICES | COOKHOUSE</title>
+	<link rel="shortcut icon" href="img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<link rel="stylesheet" type="text/css" href="css/advices.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<table class="headermain">
+			<tr>
+				<td><img src="img/logo.png" id="logo"></td>
+				<td><h1 class="pagename">Advices</h1></td>
+				<td><h3 id="right">Make<br>Your<br>Day<br>Delicious!</h3></td>
+			</tr>
+		</table>
+		<nav>
+			<ul class="navigation">
+				<a href="index.html"><li>Home</li></a>
+				<a href="reciepes.html"><li>Resipes</li></a>
+				<a href="advices.html" id="current"><li>Advices</li></a>
+				<a href="profile.html" id="profilename"><li>Profile</li></a>
+				<a href="useful.html"><li>Useful links</li></a>
+				<a href="about.html"><li>About Us</li></a>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<div class="container">
+				<h3><b>Best 5 Advices For Your Kitchen</b></h3>
+				<p>At this page you can find 10 best advices for you, which were tested and collected by our team. Let's get started!</p>
+				
+				<img src="img/logo.png" style="border: 0;"><br>
+				<small>COOKHOUSE© 2021</small>
+
+				<ol id="advices">
+					<li class="advice">
+						<h4>To make the ice transparent, freeze boiled water</h4>
+						<p>Ice served in restaurants is usually crystal clear and transparent. And the cubes from your refrigerator turn out cloudy and white. But this can be fixed: first boil the water (you can do it twice), only then pour it into the mold.</p>
+					</li>
+					<hr>
+					<li class="advice">
+						<h4>Always check the age of the eggs to make sure they are fresh</h4>
+						<p>To do this, lower them into the water:
+							<ul>
+<li>the newly laid egg will lie sideways to the very bottom;</li>
+<li>a week-old egg will pop up with the blunt end up;</li>
+<li>an egg at the age of 2-3 weeks will stand in a glassperpendicular to the bottom;</li>
+<li>a very old egg will float to the surface — it can not be eaten in any case.</li>
+							</ul>
+						</p>
+						<img src="https://cdn.lifehacker.ru/wp-content/uploads/2016/10/kako-provjeriti-svjezinu-jaja_640_1477401058.jpg">
+					</li>
+					<hr>
+					<li class="advice">
+						<h4>Press on the lemon and roll it a little on the surface of the table</h4>
+						<p>It will be much easier to squeeze out lemon juice this way.</p>
+						<img src="https://cdn.lifehacker.ru/wp-content/uploads/2017/01/lemon2_1484808998-630x315.gif">
+					</li>
+					<hr>
+					<li class="advice">
+						<h4>With a spoon, you can peel ginger in a couple of minutes</h4>
+						<p>Ginger has a rather bizarre shape, so it is not very convenient to clean it with a knife: a lot of excess is cut off. An ordinary tablespoon will cope with this task better.</p>
+						<img src="https://cdn.lifehacker.ru/wp-content/uploads/2016/10/20-trucos-para-la-cocina-12-730x500_1477401706-e1477471429336.jpg">
+					</li>
+					<hr>
+					<li class="advice">
+						<h4>To peel the garlic, shake it well</h4>
+						<p>Put the garlic in a bowl and shake it well, holding it with the palm of your hand. Most of the husk will fall off by itself. Instead of a bowl, you can use a jar with a lid.</p>
+						<img src="https://cdn.lifehacker.ru/wp-content/uploads/2016/10/Screen-Shot-2014-05-26-at-5.30.39-PM_1477401850-e1477401878962-800x394.jpg">
+					</li>
+				</ol>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div id="TDK">
+			<h3 style="margin-bottom: 2px;">Almaty (Alma-Ata)</h3>
+			<p style="margin-top: 1px;">Ulitsa Manasa, d. 33<br><br><a href="mailto:zesengaziev@outlook.com" target="_blank">Contact With Us</a></p>
+		</div>
+
+		<img src="img/logo.png" id="footerLogo">
+
+		<div id="ALA">
+			<h3 style="margin-bottom: 2px;">Taldykorgan</h3>
+			<p style="margin-top: 1px;">Ulitsa Nazarbayeva, d. 133<br><br><a href="mailto:zesengaziev@outlook.com" target="_blank">Contact With Us</a></p>
+		</div>
+		<br>
+		<small>COOKHOUSE© 2021, All Rights Reserved<br>(Yessengaziev Zhandos)</small>
+	</footer>
+
+	<script>
+		if (sessionStorage.length >= 2) {
+    let user_data = JSON.parse(sessionStorage.getItem(sessionStorage.key(0)));
+    document.getElementById("profilename").innerHTML = user_data[2];
+}
+	</script>
+</body>
+</html>

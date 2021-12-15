@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="width" content="width:device-width">
+	<title>SOURCES | COOKHOUSE</title>
+	<link rel="shortcut icon" href="img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<link rel="stylesheet" type="text/css" href="css/useful.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<table class="headermain">
+			<tr>
+				<td><img src="img/logo.png" id="logo"></td>
+				<td><h1 class="pagename">Sources</h1></td>
+				<td><h3 id="right">Make<br>Your<br>Day<br>Delicious!</h3></td>
+			</tr>
+		</table>
+		<nav>
+			<ul class="navigation">
+				<a href="index.html"><li>Home</li></a>
+				<a href="reciepes.html"><li>Resipes</li></a>
+				<a href="advices.html"><li>Advices</li></a>
+				<a href="profile.html" id="profilename"><li>Profile</li></a>
+				<a href="useful.html" id="current"><li>Useful links</li></a>
+				<a href="about.html"><li>About Us</li></a>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<div class="container">
+				<h3>Useful Links</h3>
+				<p>On this page you can find very informative and useful resources related with cooking themes.</p>
+				
+				<img src="img/coop.jpg" width="800px" height="445px"><br>
+
+				<h3>List of Links</h3>
+				<p>
+					<ul class="links">
+						<li class="link">
+							<img src="https://img.aelieve.com/wYiwMmE-byFwKrWS/w:234/h:234/q:74/https://cdn.aelieve.com/toptere/AllrecipesCom-Logo.png" class="floatRight">
+							<a href="https://allrecipes.com/"><h5 class="linkname">Allrecipes</h5></a>
+
+							<p>Thousands of recipes submitted by home cooks. Searchable database, and menu ideas. Most recipes are reviewed and rated by users.</p>
+						</li>
+						<li class="link">
+							<img src="https://img.aelieve.com/wYiwMmE-H-7hSHto/w:234/h:234/q:74/https://cdn.aelieve.com/toptere/Foodnetwork.jpg" class="floatRight">
+							<a href="https://foodnetwork.com/"><h5 class="linkname">FoodNetwork</h5></a>
+							<p>Includes cooking and wine guides, and recipes. Provides information and schedule of television shows featuring celebrity chefs, cooking instruction and food-related travel and entertainment.</p>
+						</li>
+						<li class="link">
+							<img src="https://img.aelieve.com/wYiwMmE-Zqcjxhi6/w:234/h:234/q:74/https://cdn.aelieve.com/toptere/ThekitchnCom-Logo.png" class="floatRight">
+							<a href="https://thekitchn.com/"><h5 class="linkname">Thektchn</h5></a>
+							<p>Includes cooking and wine guides, and recipes. Provides information and schedule of television shows featuring celebrity chefs, cooking instruction and food-related travel and entertainment.</p>
+						</li>
+					</ul>
+				</p>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div id="TDK">
+			<h3 style="margin-bottom: 2px;">Almaty (Alma-Ata)</h3>
+			<p style="margin-top: 1px;">Ulitsa Manasa, d. 33<br><br><a href="mailto:zesengaziev@outlook.com" target="_blank">Contact With Us</a></p>
+		</div>
+
+		<img src="img/logo.png" id="footerLogo">
+
+		<div id="ALA">
+			<h3 style="margin-bottom: 2px;">Taldykorgan</h3>
+			<p style="margin-top: 1px;">Ulitsa Nazarbayeva, d. 133<br><br><a href="mailto:zesengaziev@outlook.com" target="_blank">Contact With Us</a></p>
+		</div>
+		<br>
+		<small>COOKHOUSE© 2021, All Rights Reserved<br>(Yessengaziev Zhandos)</small>
+	</footer>
+
+	<<script>
+		if (sessionStorage.length >= 2) {
+    let user_data = JSON.parse(sessionStorage.getItem(sessionStorage.key(0)));
+    document.getElementById("profilename").innerHTML = user_data[2];
+}
+	</script>
+</body>
+</html>

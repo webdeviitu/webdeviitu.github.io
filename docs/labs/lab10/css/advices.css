@@ -1,0 +1,19 @@
+main div.container ol#advices {
+	padding-top: 15px;
+	text-align: center;
+	font-size: 130%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+}
+
+main div.container ol#advices h4 {
+	text-align: left;
+	font-size: 150%;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+main div.container ol#advices p {
+	text-align: left;
+}
